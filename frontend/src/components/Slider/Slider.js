@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import front1 from '../../img/front1.jpg';
-import front2 from '../../img/front2.jpg';
-import front3 from '../../img/front3.jpg';
+import front1 from '../../img/abc.jpg';
+import front2 from '../../img/abc1.jpg';
+import front3 from '../../img/abc2.jpg';
+import './slider.scss';
 
 
 class Slider extends Component{
@@ -18,9 +19,14 @@ class Slider extends Component{
             <div className="carousel-inner">
                 <div class="carousel-item active">
                 <img src={front1} className="d-block w-100" alt="..."/>
+                
                 <div className="carousel-caption d-none d-md-block">
-                    <h4>Fresh-Organic Smoothie Combo</h4>
-                    <p>Green Kitchen is not just a business, it's a passion</p>
+                <div class="search">
+                  <h1>Find your next travel destination</h1> 
+                 <input type="text" placeholder="search location"/>
+                     </div>
+                    <h4>EXPLORE. CREATE. INSPIRE.</h4>
+                    <p className='white-text'>Don’t let beautiful memories fade. Create your own travel journal in our free software for web</p>
                 </div>
                 </div>
                 { /* Second Div of the carousel*/ }
@@ -28,7 +34,7 @@ class Slider extends Component{
                 <img src={front2} className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
                     <h4>Always fresh organic salads and smoothie</h4>
-                    <p>Taste, feel, be, share and love the difference!</p>
+                    <p className='white-text'>Taste, feel, be, share and love the difference!</p>
                 </div>
                 </div>
                 { /* Third Div of the carousel*/ }
@@ -36,7 +42,7 @@ class Slider extends Component{
                 <img src={front3} className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
                     <h4>Sign up and be the difference</h4>
-                    <p>A unique healthy recipe social app with office located in the heart of Boston</p>
+                    <p className='white-text'>A unique healthy recipe social app with office located in the heart of Boston</p>
                 </div>
                 </div>
             </div>
