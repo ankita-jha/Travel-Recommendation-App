@@ -84,8 +84,8 @@ class Landing extends React.Component {
         {this.state.badQuery && <ErrorNotif message="Your query did not return any results. Please verify."/>}
         <Offline><ErrorNotif message="Whoops, it seems you have no internet connection."/></Offline>
         <footer>
-          <p className="author">Rafał Bagrowski © 2018 | Udacity Front-End Developer Nanodegree</p>
-          <p className="attribution">Location data powered by <strong>FourSquare API</strong></p>
+          <p className="author">Spring-22|| DEMERN </p>
+      
         </footer>
       </div>
     );
