@@ -20,6 +20,7 @@ class TravelCard extends Component {
     this.state = {
       setValue: "",
       bookmark: false,
+      path: this.props.id
     };
   }
 
@@ -55,12 +56,16 @@ class TravelCard extends Component {
 
     return (
       <div className="new-card">
+        {/* <img id="ingrePic"className="card-img-top" key={this.state.path} src={require("../../img/images/" + this.state.path + ".jpg").default} alt="" /> */}
         <Card sx={{ maxWidth: "400px", maxHeight: "500px" }}>
           <CardMedia //Image on the card
             component="img"
             height="200px"
-            image={this.props.image}
-            alt="Las Vegas"
+            // image={this.props.image}
+            // image={require(this.props.key).default}
+            src={require("../../img/images/"+ this.state.path +".jpg").default}
+            // src={require("../../img/images/" + this.state.path + ".jpg").default}
+            alt=""
           />
 
           <CardContent>

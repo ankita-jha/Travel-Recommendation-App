@@ -1,3 +1,4 @@
+const places = require("./app/routes/places-routes");
 let express = require('express'),
     app = express(),
     port = 5000,
@@ -31,6 +32,7 @@ app.use(function (req, res, next) {
 
 const initApp = require('./app/app');
 initApp(app);
+places(app);
 
 app.listen(port);
 console.log('Todo RESTful API server started on: ' + port);
