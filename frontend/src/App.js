@@ -9,7 +9,10 @@ import Login from "./pages/Login";
 import UserDetail from "./pages/UserDetail";
 import './App.css';
 import AboutUs from "./pages/AboutUs/AboutUs";
-
+import NewPost from "./pages/NewPost/NewPost.js";
+import Dashboard from "./pages/Dashboard/Dashboard.js";
+import ViewBlog from "./pages/View Blog/ViewBlog.js";
+import Footer from "./components/Footer/Footer.js";
 class App extends Component {
 
     /** redirect user to his/her combo list after login successfully
@@ -43,24 +46,46 @@ class App extends Component {
 
     render() {
         return (
-            <div className="app-container">
-                <div><Navbar/></div>
-                <div>
-                {/* use Switch to reroute? */}
-                    {/* <Switch>  
+          <div className="app-container">
+            <div>
+              <Navbar />
+            </div>
+            <div>
+              {/* use Switch to reroute? */}
+              {/* <Switch>  
                        
                     </Switch>   */}
-                    <Route exact path="/home" component={Home}/>    
-                    <Route exact path="/create" component={NewPlan}/>
-                    <Route exact path="/view" component={ViewPlan}/>
-                    <Route exact path="/login" component={() => <Login getUser={this.getUser}/>}/>
-                    <Route exact path="/register" component={() => <Register addUser={this.addUser}/>}/>    
-                    <Route exact path="/account" component={()=><UserDetail removeUser={this.removeUser} deleteCombo={this.deleteCombo}/>}/>
-                    <Route exact path="/AboutUs" component={AboutUs}/>
-                    <Redirect to="/home"/>
-                   
-                </div>
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/create" component={NewPlan} />
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/viewblog" component={ViewBlog} />
+              <Route exact path="/view" component={ViewPlan} />
+              <Route
+                exact
+                path="/login"
+                component={() => <Login getUser={this.getUser} />}
+              />
+              <Route
+                exact
+                path="/register"
+                component={() => <Register addUser={this.addUser} />}
+              />
+              <Route
+                exact
+                path="/account"
+                component={() => (
+                  <UserDetail
+                    removeUser={this.removeUser}
+                    deleteCombo={this.deleteCombo}
+                  />
+                )}
+              />
+              {/* <Route exact path="/dashboard" component={Dashboard} /> */}
+              <Route exact path="/newPost" component={NewPost} />
+              <Redirect to="/home" />
+              <Footer />
             </div>
+          </div>
         );
     }
 }
