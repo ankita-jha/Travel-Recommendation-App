@@ -1,3 +1,7 @@
+const multer = require("multer");
+const path = require("path");
+const postRoute = require("./app/routes/posts");
+
 let express = require('express'),
     app = express(),
     port = 5000,
@@ -6,9 +10,10 @@ let express = require('express'),
 
 const cors = require('cors');
 app.use(cors());
+app.use("/images", express.static(path.join(__dirname, "/images")));
 
 // mongoose instance connection url connection
-mongoose.connect("mongodb://127.0.0.1:27017/travel-db", {
+mongoose.connect("mongodb+srv://26pratik:qwerty1234@cluster0.dbjcn.mongodb.net/travel-db", {
     useUnifiedTopology:true,
     useNewUrlParser:true
 }).then(()=>console.log('Connected to Database')).catch((e)=>{
@@ -29,8 +34,25 @@ app.use(function (req, res, next) {
     next();
 });
 
+//Code to upload image files
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "images");
+  },
+  filename: (req, file, cb) => {
+    cb(null, req.body.name);
+  },
+});
+
+const upload = multer({ storage: storage });
+app.post("/api/upload", upload.single("file"), (req, res) => {
+  res.status(200).json("File has been uploaded");
+}); 
+
+app.use("/api/posts", postRoute);
+
 const initApp = require('./app/app');
 initApp(app);
 
 app.listen(port);
-console.log('Todo RESTful API server started on: ' + port);
+console.log('Server started on port: ' + port);

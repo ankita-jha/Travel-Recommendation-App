@@ -1,5 +1,4 @@
 import "./NewPost.scss";
-// import image1 from '../../images/Lasvegas2.jpg';
 import {useState} from "react";
 import axios from "axios";
 
@@ -28,14 +27,14 @@ export default function NewPost() {
 
             try {
                 console.log('Hello logging');
-                await axios.post("/upload", data)
+                await axios.post("/api/upload", data)
             } catch(err) {}
         }
 
 
 
         try {
-            axios.post("/posts", newPost);
+            axios.post("/api/posts", newPost);
             //window.location.replace("/newPost");
         } catch(err) {}
         
