@@ -22,7 +22,7 @@ class Slider extends Component{
                 
                 <div className="carousel-caption d-none d-md-block">
                 <div class="search">
-                  <h1>Find your next travel destination</h1> 
+                  <h1>Find and explore your next travel destination</h1> 
                  <input type="text" placeholder="search location"/>
                      </div>
                     <h4>EXPLORE. CREATE. INSPIRE.</h4>
@@ -33,8 +33,8 @@ class Slider extends Component{
                 <div className="carousel-item">
                 <img src={front2} className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h4>Always fresh organic salads and smoothie</h4>
-                    <p className='white-text'>Taste, feel, be, share and love the difference!</p>
+                    <h4>Always best places and blogs</h4>
+                    <p className='white-text'>Feel, be, share and love the difference!</p>
                 </div>
                 </div>
                 { /* Third Div of the carousel*/ }
@@ -42,7 +42,7 @@ class Slider extends Component{
                 <img src={front3} className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
                     <h4>Sign up and be the difference</h4>
-                    <p className='white-text'>A unique healthy recipe social app with office located in the heart of Boston</p>
+                    <p className='white-text'>A travel app with office located in the heart of Boston</p>
                 </div>
                 </div>
             </div>
