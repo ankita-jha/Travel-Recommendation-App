@@ -1,6 +1,9 @@
+
 const multer = require("multer");
 const path = require("path");
 const postRoute = require("./app/routes/posts");
+
+const places = require("./app/routes/places-routes");
 
 let express = require('express'),
     app = express(),
@@ -53,6 +56,7 @@ app.use("/api/posts", postRoute);
 
 const initApp = require('./app/app');
 initApp(app);
+places(app);
 
 app.listen(port);
 console.log('Server started on port: ' + port);

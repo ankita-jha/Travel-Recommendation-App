@@ -22,7 +22,7 @@ class Customer extends Component{
                                 <h6>Liam B</h6>
                                 <div className='underline'></div>
                                 <p>
-                                "I love working with Green Kitchen App! The recipes people share are delicious and fully customized. I have referred many friends here who all love the service. It makes my life a lot easier and worth the cost.  Love the clean energy they have provided."
+                                "I love working with Travel Hoppers App! The places shared are top-rated and fully customized. I have referred many friends here who all love the service. It makes my life a lot easier and worth the cost.  Love the clean energy they have provided."
                                 </p>
                             </div>
                             </div>
@@ -35,7 +35,7 @@ class Customer extends Component{
                                 <h6>Olivia Johnson</h6>
                                 <div className='underline'></div>
                                 <p>
-                                "We absolutely love every dish that people make. Green Kitchen takes into account our strange allergies, preferences, and dietary restrictions. They are constantly creating new dishes so that we never get bored."
+                                "We absolutely love to read blogs on the app. Travel Hoppers takes into account our strange preferences. They are constantly uploading new blogs so that we never get bored."
                                 </p>
                             </div>
                             </div>
@@ -48,7 +48,7 @@ class Customer extends Component{
                                 <h6>Emma W</h6>
                                 <div className='underline'></div>
                                 <p>
-                                "When I found Green Kitchen, everything finally fell into place. Even with my incredibly high standards, they have met my expectations again and again. I have been so impressed by them and so relieved I found them. I honestly couldn't recommend enough."
+                                "When I found Travel Hoppers, everything finally fell into place. Even with my incredibly high standards, they have met my expectations again and again. I have been so impressed by them and so relieved I found them. I honestly couldn't recommend enough."
                                 </p>
                             </div>
                             </div>

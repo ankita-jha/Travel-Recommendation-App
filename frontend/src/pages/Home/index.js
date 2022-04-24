@@ -85,11 +85,7 @@ render() {
                 <div className="underline mx-auto"></div>
                 {/*Brieft Introduction about the restaurant*/}
                 <p>
-                  We're leading a movement to reimage fast food for a new era!
-                  Building healtheir communities by connecting people to real
-                  food. Our core values guide our actions and we aim to empower
-                  our customers, team members and partners to be a positive
-                  force on the food system.
+                  Write and search blogs and search places.
                 </p>
                 <MyNavLink
                   to="../AboutUs/AboutUs"
@@ -113,11 +109,8 @@ render() {
               <div className="col-md-4 text-center">
                 <h6>Our Mission</h6>
                 <p>
-                  At Green Kitchen we believe that every part of one’s
-                  well-being can be improved by proper nutrition. Physical,
-                  mental and spiritual well-being can be elevated with what you
-                  choose to eat, drink and think. Everyone should help make the
-                  difference.
+                  At Place Hoppers, we believe that at the end you regret places that you didn't go.
+                  We enable people to find places to visit.
                 </p>
               </div>
               {/*Our value*/}
@@ -125,18 +118,15 @@ render() {
                 <h6>Our Story</h6>
                 <p>
                   We are four college students who were simply looking for a
-                  healthier way to eat. We want to create a business where
-                  quality was never sacrificed for convenience. On August 1st
-                  2020, we lanuched Green Kichen App in Boston MA, and served
-                  our first customers with a vision to reimagine fast food.
+                  places to visit. We want to create a business where
+                  quality was never sacrificed for convenience.
                 </p>
               </div>
               {/*Our story*/}
               <div className="col-md-4 text-center">
                 <h6>Our Value</h6>
                 <p>
-                  We’re in the business of social media and we’re out to change
-                  what that means. The better you are, the better you will feel,
+                  The better you are, the better you will feel,
                   the better decisions you will make, and the easier it will be
                   to conquer the obstacles of life.
                 </p>
@@ -145,7 +135,7 @@ render() {
           </div>
         </section>
         {/*What customers say about us*/}
-        <Cards />
+        {/* <Cards /> */}
         <Customer />
         <MapContainer />
         {/* <Footer/>                     */}
