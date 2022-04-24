@@ -1,16 +1,22 @@
 .NavbarItems{
-    background-color:#F2eee4;
-    height: 80px;
+    background-color:#1fb9c4;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
 }
 
+.logo{
+height:70px;
+width:70px;
+border-radius: 50%;
+
+}
 .navbar-logo{
-    color: rgb(5, 79, 82);
+    color: rgb(18, 10, 90);
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
 }
 

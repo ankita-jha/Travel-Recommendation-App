@@ -47,9 +47,9 @@ class Register extends Component {
     render() {
         return (
             <div >
-                <Background/>
+                <Background className="bgimg"/>
                 <br/>
-                <h3 className='promo'>Sign up to share your favorite combos with other healthy eaters!</h3>
+                <div className="divLogin">
                 <Row className="Register">
                     <form onSubmit={this.addUser}>
                         <FormGroup>
@@ -76,7 +76,8 @@ class Register extends Component {
                         <Button type="submit" bsStyle="primary">Register</Button>
                     </form>
                 </Row>
-                <hr/>
+                </div>
+                {/* <hr/>
                 <section className='section1'>
                 <div className ="container">
                     <div className = "row">
@@ -90,9 +91,9 @@ class Register extends Component {
                     </div>
                 </div>
                 </section>
-                <hr/>
+                <hr/> */}
                 <MapContainer/>
-            <Footer/>
+            
             </div>           
         );
     }

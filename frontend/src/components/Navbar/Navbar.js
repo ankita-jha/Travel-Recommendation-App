@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MyNavLink from '../../pages/MyNavLink';
 import "./Navbar.scss";
+import Logo from "../../img/images/Logo.gif";
 
 class Navbar extends Component {
   //set state of Navbar
@@ -26,8 +27,9 @@ class Navbar extends Component {
     return (
       //List all pages in Nav menu
       <nav className="NavbarItems">
+        <img src={Logo} alt="Loading" className="logo"/>
         <h1 className="navbar-logo">
-          Place Hoppers<i className="fab fa-react"></i>
+          Travel Ducks
         </h1>
 
         <ul className="nav-menu active">

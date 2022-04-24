@@ -9,7 +9,7 @@ const cors = require('cors');
 app.use(cors());
 
 // mongoose instance connection url connection
-mongoose.connect("mongodb://127.0.0.1:27017/travel-db", {
+mongoose.connect("mongodb://127.0.0.1:27017/travel-db1", {
     useUnifiedTopology:true,
     useNewUrlParser:true
 }).then(()=>console.log('Connected to Database')).catch((e)=>{
