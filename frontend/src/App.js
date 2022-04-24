@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import UserDetail from "./pages/UserDetail";
-import "./App.css";
+import "./App.scss";
 import NewPost from "./pages/NewPost/NewPost.js";
 import Dashboard from "./pages/Dashboard/Dashboard.js";
 import ViewBlog from "./pages/View Blog/ViewBlog.js";

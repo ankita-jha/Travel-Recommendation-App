@@ -1,5 +1,5 @@
 import React from 'react';
-import './Toolbar.css';
+import './Toolbar.scss';
 import Buttons from '../components/Buttons';
 import Chip from '@material-ui/core/Chip';
 

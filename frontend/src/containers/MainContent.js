@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import store from '../store';
-import './MainContent.css';
+import './MainContent.scss';
 import { Offline } from 'react-detect-offline';
 import ErrorNotif from '../components/ErrorNotif';
 

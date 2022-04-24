@@ -1,5 +1,5 @@
 import React from 'react';
-import './Landing.css';
+import './Landing.scss';
 
 import store from '../store';
 import { fetchLocations } from '../helpers/API';
