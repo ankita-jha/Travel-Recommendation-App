@@ -88,16 +88,16 @@ class Dashboard extends Component {
               <TravelCard list={this.state.data} updateState={this.updateState}>
                 {" "}
               </TravelCard> */}
-              <div className="travelcards">
-            <TravelCard image={image1} title="Las Vegas" value="4.5" />
-            <TravelCard image={image9} title="Boston" value="3.5" />
-            <TravelCard image={image2} title="Miami" value="5" />
-            <TravelCard image={image3} title="Washington DC" value="4" />
-            <TravelCard image={image4} title="California" value="4.5" />
-            <TravelCard image={image5} title="Ney York" value="4" />
-            <TravelCard image={image6} title="India" value="4" />
-            <TravelCard image={image7} title="Paris" value="45" />
-            <TravelCard image={image8} title="Tokyo" value="3.5" />
+            <div className="travelcards">
+              <TravelCard image={image1} title="Las Vegas" value="4.5" />
+              <TravelCard image={image9} title="Boston" value="3.5" />
+              <TravelCard image={image2} title="Miami" value="5" />
+              <TravelCard image={image3} title="Washington DC" value="4" />
+              <TravelCard image={image4} title="California" value="4.5" />
+              <TravelCard image={image5} title="Ney York" value="4" />
+              <TravelCard image={image6} title="India" value="4" />
+              <TravelCard image={image7} title="Paris" value="45" />
+              <TravelCard image={image8} title="Tokyo" value="3" />
             </div>
             {/* <BlogCard
                 blogImage={image2}

@@ -83,6 +83,7 @@ class App extends Component {
               {/* <Route exact path="/dashboard" component={Dashboard} /> */}
               <Route exact path="/newPost" component={NewPost} />
               <Redirect to="/home" />
+              <br></br>
               <Footer />
             </div>
           </div>
