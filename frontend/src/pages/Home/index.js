@@ -29,7 +29,7 @@ class Home extends Component {
               <div className="col-md-4 text-center">
                 <h6>Our Mission</h6>
                 <p>
-                  At Place Hoppers, we believe that at the end you regret places
+                  At Travel Ducks, we believe that at the end you regret places
                   that you didn't go. We enable people to find places to visit.
                 </p>
               </div>
@@ -37,18 +37,20 @@ class Home extends Component {
               <div className="col-md-4 text-center">
                 <h6>Our Story</h6>
                 <p>
-                  We are four college students who were simply looking for a
-                  places to visit. We want to create a business where quality
-                  was never sacrificed for convenience.
+                  We are four college students who are enthusiast travelers and
+                  like to share our travel stories. Creating a platform just for
+                  travel and sharing those experiences is like one down in our
+                  bucketlist. We want to create a business where quality was
+                  never sacrificed for convenience.
                 </p>
               </div>
               {/*Our story*/}
               <div className="col-md-4 text-center">
                 <h6>Our Value</h6>
                 <p>
-                  The better you are, the better you will feel, the better
+                  The better the place the you are, the better you will feel, the better
                   decisions you will make, and the easier it will be to conquer
-                  the obstacles of life.
+                  the obstacles of life. So take a break.
                 </p>
               </div>
             </div>
