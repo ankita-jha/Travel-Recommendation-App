@@ -1,12 +1,6 @@
-import React, {Component} from 'react';
-import MyNavLink from '../../pages/MyNavLink';
-import AboutUs from '../AboutUs/AboutUs';
-import Slider from '../../components/Slider/Slider';
-import Footer from '../../components/Footer/Footer';
-import Customer from '../../components/Customer/Customer';
-import MapContainer from '../../components/MapContainer/MapContainer';
-import Cards from '../../components/Cards/Cards';
-import Card from "../../components/Card/TravelCard.js";
+import React, { Component } from "react";
+import Slider from "../../components/Slider/Slider";
+import MapContainer from "../../components/MapContainer/MapContainer";
 class Home extends Component {
   //
 
@@ -48,9 +42,9 @@ class Home extends Component {
               <div className="col-md-4 text-center">
                 <h6>Our Value</h6>
                 <p>
-                  The better the place the you are, the better you will feel, the better
-                  decisions you will make, and the easier it will be to conquer
-                  the obstacles of life. So take a break.
+                  The better the place the you are, the better you will feel,
+                  the better decisions you will make, and the easier it will be
+                  to conquer the obstacles of life. So take a break.
                 </p>
               </div>
             </div>

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import MyNavLink from '../../pages/MyNavLink';
 import MapContainer from '../../components/MapContainer//MapContainer';
 import Footer from '../../components/Footer/Footer';
 import about from '../../img/about.jpg';

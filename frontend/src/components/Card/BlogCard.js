@@ -10,10 +10,8 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Popup from "./Popup";
 import { useState } from "react";
 import axios from "axios";
@@ -46,21 +44,16 @@ export default function BlogCard(props) {
     setUpdateMode(false);
     console.log("blog card title=", title);
 
-    // handleUpdate = async (title, desc, id) => {
-    //   try {
     console.log("title", title);
     console.log("desc", desc);
     await axios.put(`/api/posts/${props.id}`, {
       title,
       desc,
     });
-    //   setUpdateMode(false)
-    // } catch (err) {}
+
     console.log("Before handle update");
     const update = props.handleUpdate(props.id);
-    //window.location.reload();
   };
-  // };
 
   return (
     <Card sx={{ maxWidth: 345 }}>

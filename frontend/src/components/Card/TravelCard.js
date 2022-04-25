@@ -8,10 +8,6 @@ import { blue, red } from "@mui/material/colors";
 import Rating from "@mui/material/Rating";
 import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
-import Axios from "axios";
-import IconButton from "@mui/material/IconButton";
-// import AddBoxIcon from "@mui/icons-material/AddBox";
-// import { useContext, useEffect, useState } from "react";
 
 //Designing the card
 class TravelCard extends Component {
@@ -20,7 +16,7 @@ class TravelCard extends Component {
     this.state = {
       setValue: "",
       bookmark: true,
-      path: this.props.id
+      path: this.props.id,
     };
   }
 
@@ -89,18 +85,27 @@ class TravelCard extends Component {
                   defaultValue={this.props.value}
                 />
               </div>
-              <div className='bookmark'>
-                          {
-                              this.state.bookmark ? 
-                              <div onClick={()=>this.setState({bookmark: !this.state.bookmark})}>
-                                  <BookmarkBorderOutlinedIcon sx={{ fontSize: 40, color: blue[500] }}/>
-                              </div>                             
-                              :
-                              <div onClick={()=>this.setState({bookmark: !this.state.bookmark})}>
-                                  <BookmarkIcon sx={{ fontSize: 40, color: blue[500] }}/>
-                              </div>                          
-                          }                         
-                        </div>
+              <div className="bookmark">
+                {this.state.bookmark ? (
+                  <div
+                    onClick={() =>
+                      this.setState({ bookmark: !this.state.bookmark })
+                    }
+                  >
+                    <BookmarkBorderOutlinedIcon
+                      sx={{ fontSize: 40, color: blue[500] }}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    onClick={() =>
+                      this.setState({ bookmark: !this.state.bookmark })
+                    }
+                  >
+                    <BookmarkIcon sx={{ fontSize: 40, color: blue[500] }} />
+                  </div>
+                )}
+              </div>
             </div>
             {/* Weather and Location */}
             <div>
