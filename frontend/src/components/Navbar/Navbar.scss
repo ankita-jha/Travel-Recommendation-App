@@ -11,6 +11,7 @@
 height:70px;
 width:70px;
 border-radius: 50%;
+cursor: pointer
 
 }
 .navbar-logo{
@@ -41,4 +42,12 @@ border-radius: 50%;
     text-decoration: none;
     padding: 0.5rem 1rem;
     text-emphasis-style: bold;
+}
+
+.nav-item1{
+    color: rgb(5, 79, 82);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-emphasis-style: bold;
+    display: flex;
 }

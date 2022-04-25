@@ -58,7 +58,9 @@ class Dashboard extends Component {
   // };
 
   render() {
+    
      return (
+
       <div className="container valign-wrapper">
         <div className="row">
           <div style={{ marginTop: "20px" }} className="Cards">
@@ -66,7 +68,7 @@ class Dashboard extends Component {
           <div>
             <p></p>
               <div className="travelcards">
-
+              
               {this.state.data&&this.state.data.map((element,id) => {
                     const { _id,path,title, rating, bookmarkstatus } = element;
                     
