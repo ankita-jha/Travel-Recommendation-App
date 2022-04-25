@@ -11,7 +11,7 @@ import {
   HelpBlock,
 } from "react-bootstrap";
 import MapContainer from "../../components/MapContainer/MapContainer";
-import $ from "jquery";
+
 import Footer from "../../components/Footer/Footer";
 import Background from "../../components/Background/Background";
 // import emailService from "../../services/emailService";
