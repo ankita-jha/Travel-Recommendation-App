@@ -25,3 +25,33 @@
     border-radius: 15%;
 
 }
+
+.singlePostTitleInput {  
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+    width: 320px;  
+}
+
+.singlePostDescInput {
+    border: none;
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostButton {
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}

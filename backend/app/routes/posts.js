@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-    if (post.username === req.body.username) {
+    //if (post.username === req.body.username) {
       try {
         const updatedPost = await Post.findByIdAndUpdate(
           req.params.id,
@@ -29,9 +29,9 @@ router.put("/:id", async (req, res) => {
       } catch (err) {
         res.status(500).json(err);
       }
-    } else {
-      res.status(401).json("You can update only your post!");
-    }
+    // } else {
+    //   res.status(401).json("You can update only your post!");
+    // }
   } catch (err) {
     res.status(500).json(err);
   }

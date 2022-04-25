@@ -1,69 +1,73 @@
-import React, { Component } from 'react';
-import BlogCard from '../../components/Card/BlogCard';
-import image2 from "../../img/images/AmsterDam.jpg";
-import axios from 'axios';
+import React, { Component } from "react";
+import BlogCard from "../../components/Card/BlogCard";
+import axios from "axios";
 
 class ViewBlog extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       data: null,
       view: false,
     };
-
   }
   componentDidMount() {
-    fetch('http://localhost:5000/api/posts')
-    .then(response => response.json())
-    .then(data => this.setState({ data }));
-      }
-  
-//     render() { 
-//         return (
+    fetch("http://localhost:5000/api/posts")
+      .then((response) => response.json())
+      .then((data) => this.setState({ data }));
+  }
 
-//             <BlogCard  blogImage={image2} Avatar="S" blogTitle="Trip to Amsterdam" blogDescription="My trip to Amsterdam was awesome" blogParagraph="I disjndks" />
+  deleteBlog = async (id) => {
+    await axios.delete(`http://localhost:5000/api/posts/${id}`).then(() => {
+      fetch("http://localhost:5000/api/posts")
+        .then((response) => response.json())
+        .then((data) => {
+          this.setState({
+            data,
+          }).catch((err) => console.log(err));
+        })
+        .catch((err) => console.log(err));
+    });
+  };
 
-
-//         );
-//     }
-// }
-
-    deleteBlog = (id) => {
-    axios.delete(`http://localhost:5000/api/posts/${id}`).then(() => {
-        fetch('http://localhost:5000/api/posts').then(response => response.json()).then((data) => {
-            this.setState({
-                data
-            }).catch(err => console.log(err))
-        }).catch(err => console.log(err))
-    })
-
-
-    }
+  handleUpdate = (id) => {
+    console.log("Inside handle update");
+    fetch("http://localhost:5000/api/posts")
+      .then((response) => response.json())
+      .then((data) => this.setState({ data }));
+  };
 
   render() {
-    console.log(this.state.data, "our data")
-    const PF = "http://localhost:5000/images/"
-     return (
+    //const updateBlog = {title, desc};
+    console.log(this.state.data, "our data");
+    const PF = "http://localhost:5000/images/";
+    return (
       <div className="container valign-wrapper">
         <div className="row">
-          <div style={{ marginTop: "20px" }} className="Cards">
-          </div>
+          <div style={{ marginTop: "20px" }} className="Cards"></div>
           <div>
             <p></p>
-              <div className="travelcards">
+            <div className="travelcards">
+              {this.state.data &&
+                this.state.data.map((element, id) => {
+                  const { _id, title, desc, photo, username, createdAt } =
+                    element;
 
-              {this.state.data&&this.state.data.map((element,id) => {
-                    const { _id,title,desc, photo, username, createdAt } = element;
-                    
-                    return(
+                  return (
                     //   <TravelCard key={path} id={element.path} image={image1} title={title}  value={rating}/>
-<BlogCard   key={photo} Avatar={username.charAt(0).toUpperCase()} blogImage={PF+photo} blogTitle={title} blogDescription="" 
-blogParagraph={desc} id={_id} deleteBlog={() => this.deleteBlog(_id)}/>                      
-                    )
-                    })}
-
-
+                    <BlogCard
+                      key={photo}
+                      Avatar={username.charAt(0).toUpperCase()}
+                      blogImage={PF + photo}
+                      blogTitle={title}
+                      blogDescription={createdAt}
+                      blogParagraph={desc}
+                      id={_id}
+                      deleteBlog={() => this.deleteBlog(_id)}
+                      username={username}
+                      handleUpdate={() => this.handleUpdate(_id)}
+                    />
+                  );
+                })}
             </div>
           </div>
         </div>
@@ -71,5 +75,5 @@ blogParagraph={desc} id={_id} deleteBlog={() => this.deleteBlog(_id)}/>
     );
   }
 }
- 
+
 export default ViewBlog;
