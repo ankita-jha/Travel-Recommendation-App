@@ -72,13 +72,17 @@ class Login extends Component {
               </Button>
               <p></p>
               <span>
+                Forgot Password?
+                <Link to="/forgot">Reset Password</Link>
+              </span>
+              <p></p>
+              <span>
                 Don't have account?
                 <Link to="/register">Create Account</Link>
               </span>
             </form>
           </Row>
         </div>
-
         <hr />
         <MapContainer />
       </div>

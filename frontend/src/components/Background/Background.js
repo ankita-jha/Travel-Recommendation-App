@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import imagebg from "../../img/images/Miami.jpg";
 
 class Background extends Component {
@@ -7,12 +7,13 @@ class Background extends Component {
       <div
         id="carouselExampleCaptions"
         className="carousel slide1"
-        data-bs-ride="carousel">
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src={imagebg} className=" w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h1>Taste, Feel, and Be the Difference!</h1>
+              <h1>Travel, Breathe and Be the Difference!</h1>
             </div>
           </div>
         </div>

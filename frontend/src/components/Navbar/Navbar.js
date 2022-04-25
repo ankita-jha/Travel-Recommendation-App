@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import MyNavLink from '../../pages/MyNavLink';
+import React, { Component } from "react";
+import MyNavLink from "../../pages/MyNavLink";
 import "./Navbar.scss";
 import Logo from "../../img/images/Logo.gif";
 
@@ -27,8 +27,10 @@ class Navbar extends Component {
     return (
       //List all pages in Nav menu
       <nav className="NavbarItems">
-        <img src={Logo} alt="Loading" className="logo" />
-        <h1 className="navbar-logo">Travel Ducks</h1>
+        <MyNavLink to="/home" className="nav-item1">
+          <img src={Logo} alt="Loading" className="logo" />
+          <h1 className="navbar-logo">Travel Ducks</h1>
+        </MyNavLink>
 
         <ul className="nav-menu active">
           <li>
@@ -57,7 +59,8 @@ class Navbar extends Component {
             <MyNavLink
               to={user === null ? "/login" : "/newPost"}
               onClick={this.getUser}
-              className="nav-item">
+              className="nav-item"
+            >
               Add Experience
             </MyNavLink>
           </li>
@@ -66,7 +69,8 @@ class Navbar extends Component {
             <MyNavLink
               to={user === null ? "/login" : "/account"}
               onClick={this.getUser}
-              className="nav-item">
+              className="nav-item"
+            >
               My Account
             </MyNavLink>
           </li>
@@ -75,6 +79,5 @@ class Navbar extends Component {
     );
   }
 }
-
 
 export default Navbar;
