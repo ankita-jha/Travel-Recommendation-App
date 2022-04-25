@@ -38,6 +38,7 @@ class ViewBlog extends Component {
         }).catch(err => console.log(err))
     })
 
+
     }
 
   render() {

@@ -17,6 +17,8 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Popup from "./Popup";
 import { useState } from "react";
 import axios from 'axios';
+import "./BlogCard.scss";
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -64,15 +66,36 @@ export default function BlogCard(props) {
           <FavoriteIcon />
         </IconButton>
         <IconButton aria-label="share" onClick={() => setButtonPopup(true)}>
+          
           <ShareIcon />
         </IconButton>
 
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-          <h1>
-            <a href="https://www.facebook.com/">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </h1>
+          <div className="socialmedia">
+            <h1>
+              <a href="https://www.facebook.com/" className="facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </h1>
+            <h1>
+              <a href="https://web.whatsapp.com/" className="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </h1>
+            <h1>
+              <a href="https://twitter.com/" className="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </h1>
+            <h1>
+              <a href="https://www.instagram.com/" className="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </h1>
+          </div>
+          <button className="btnclose" onClick={() => setButtonPopup(false)}>
+          close
+        </button>
         </Popup>
         <div className="delete-blog p-2" onClick={() => props.deleteBlog(props.id)}>
           <i class="fa-solid fa-trash-can fa-lg"></i>
