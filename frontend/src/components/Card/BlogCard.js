@@ -16,6 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Popup from "./Popup";
 import { useState } from "react";
+import axios from 'axios';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -73,7 +74,9 @@ export default function BlogCard(props) {
             </a>
           </h1>
         </Popup>
-
+        <div className="delete-blog p-2" onClick={() => props.deleteBlog(props.id)}>
+          <i class="fa-solid fa-trash-can fa-lg"></i>
+        </div>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

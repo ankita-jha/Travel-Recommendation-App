@@ -2,10 +2,17 @@
     padding-top: 50px;
 }
 
+.newPostHeading {
+    text-align: center;
+    font-size: 30px;
+    color: teal;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .newPostImage {
     margin-left: 150px;
-    width: 70vw;
-    height: 250px;
+    width: 80vw;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 20px;
@@ -23,8 +30,8 @@
 }
 
 .newPostIcon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid;
     display: flex;
@@ -32,7 +39,7 @@
     justify-content: center;
     color: rgb(121, 118, 118);
     cursor: pointer;
-    font-size: 60px;
+    font-size: 35px;
     
 }
 
@@ -44,13 +51,21 @@
     height: 100px;
 }
 
+.newPostInput1 {
+    font-size: 30px;
+    // border: none;
+    width: 80vw;
+    padding: 20px;
+    height: 100px;
+    // margin-left: 500px;
+}
 .newPostInput:focus {
     outline: none;
 }
 
 .newPostText {
     font-size: 20px;
-    height: 100vh;
+    height: 30vh;
 }
 
 .newPostSubmit {

@@ -12,7 +12,7 @@ export default function NewPost() {
         e.preventDefault();
         console.log('Entering handle submit');
         const newPost = {
-            username: localStorage.getItem("emailId"),
+            username: localStorage.getItem("user"),
             title,
             desc,
         };
@@ -42,7 +42,9 @@ export default function NewPost() {
     }
 
     return (
+        
         <div className="newPost">
+            <div className="newPostHeading">Add Your Experience</div>
             {
                 file && 
                 <img src={URL.createObjectURL(file)} className="newPostImage" alt=""/>    
@@ -59,7 +61,7 @@ export default function NewPost() {
                     onChange={(e) => setTitle(e.target.value)}></input>
                 </div>
                 <div className="newPostFormGroup">
-                    <textarea placeholder="Tell your story..." type="text" className="newPostInput newPostText" 
+                    <textarea placeholder="Tell your story..." type="text" className="newPostInput1 newPostText" 
                     onChange={(e) => setDesc(e.target.value)}></textarea>
                 </div>
                 <button className="newPostSubmit" type="submit">Publish</button>

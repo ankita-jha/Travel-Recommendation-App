@@ -58,46 +58,13 @@ class Dashboard extends Component {
   // };
 
   render() {
-    // const { user } = this.props.auth;
-
-    return (
+     return (
       <div className="container valign-wrapper">
         <div className="row">
           <div style={{ marginTop: "20px" }} className="Cards">
-            {/* <TravelCard
-              travelImage={image1}
-              travelTitle={this.state.cardTitle}
-              travelValue={this.state.cardValue}
-              travelRatings={this.state.ratings}>
-              {" "}
-            </TravelCard> */}
-            {/* <BlogCard
-              blogImage={image2}
-              Avatar="S"
-              blogTitle="Trip to Amsterdam"
-              blogDescription="My trip to Amsterdam was awesome"
-              blogParagraph="I disjndks"
-            /> */}
           </div>
           <div>
-            <p>{/* <Link to="/newPost">NewPost</Link> */}</p>
-
-            {/* <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem",
-              }}
-              onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Logout
-            </button> */}
-
-            {/* <div style={{ marginTop: "20px" }}>
-              <TravelCard list={this.state.data} updateState={this.updateState}>
-                {" "}
-              </TravelCard> */}
+            <p></p>
               <div className="travelcards">
 
               {this.state.data&&this.state.data.map((element,id) => {
@@ -107,27 +74,7 @@ class Dashboard extends Component {
                       <TravelCard key={path} id={element.path} image={image1} title={title}  value={rating}/>
                     )
                     })}
-
-
-            {/* <TravelCard image={image1} title="Las Vegas" value="4.5" />
-            <TravelCard image={image9} title="Boston" value="3.5" />
-            <TravelCard image={image2} title="Miami" value="5" />
-            <TravelCard image={image3} title="Washington DC" value="4" />
-            <TravelCard image={image4} title="California" value="4.5" />
-            <TravelCard image={image5} title="Ney York" value="4" />
-            <TravelCard image={image6} title="India" value="4" />
-            <TravelCard image={image7} title="Paris" value="45" />
-            <TravelCard image={image8} title="Tokyo" value="3.5" /> */}
             </div>
-            {/* <BlogCard
-                blogImage={image2}
-                Avatar="S"
-                blogTitle="Trip to Amsterdam"
-                blogDescription="My trip to Amsterdam was awesome"
-                blogParagraph="I disjndks"
-              /> */}
-            {/* </div> */}
-            <div></div>
           </div>
         </div>
       </div>
@@ -135,14 +82,4 @@ class Dashboard extends Component {
   }
 }
 
-// Dashboard.propTypes = {
-//   logoutUser: PropTypes.func.isRequired,
-//   auth: PropTypes.object.isRequired,
-// };
-
-// const mapStateToProps = (state) => ({
-//   auth: state.auth,
-// });
-
-// export default connect(mapStateToProps, { logoutUser })(Dashboard);
 export default Dashboard;
