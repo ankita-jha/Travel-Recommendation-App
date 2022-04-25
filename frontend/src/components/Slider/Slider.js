@@ -27,8 +27,8 @@ class Slider extends Component{
                  <input type="text" placeholder="search location"/> */}
                  <Weather/>
                      </div>
-                    <h4>EXPLORE. CREATE. INSPIRE.</h4>
-                    <p className='white-text'>Don’t let beautiful memories fade. Create your own travel journal in our free software for web</p>
+                    {/* <h4>EXPLORE. CREATE. INSPIRE.</h4>
+                    <p className='white-text'>Don’t let beautiful memories fade. Create your own travel journal in our free software for web</p> */}
                 </div>
                 </div>
                 { /* Second Div of the carousel*/ }
