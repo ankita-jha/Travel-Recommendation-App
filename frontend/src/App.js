@@ -13,6 +13,7 @@ import NewPost from "./pages/NewPost/NewPost.js";
 import Dashboard from "./pages/Dashboard/Dashboard.js";
 import ViewBlog from "./pages/View Blog/ViewBlog.js";
 import Footer from "./components/Footer/Footer.js";
+import Search from "./pages/Search Top Places/Search.js"
 class App extends Component {
 
     /** redirect user to his/her combo list after login successfully
@@ -57,6 +58,8 @@ class App extends Component {
                     </Switch>   */}
               <Route exact path="/home" component={Home} />
               <Route exact path="/create" component={NewPlan} />
+              <Route exact path="/search" component={Search} />
+
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/viewblog" component={ViewBlog} />
               <Route exact path="/view" component={ViewPlan} />

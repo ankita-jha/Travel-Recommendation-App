@@ -71,31 +71,9 @@ class Login extends Component {
                 </form>
               </Row>
             </div>
-            
 
-            {/* <section className="section1">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-12 text-center">
-                    <h3 className="main-heading">We are committed to change</h3>
-                    <div className="underline mx-auto"></div>
-                    <p>
-                      In a world where the long- and short-term effects of
-                      climate change pose major challenges for farmers, the need
-                      for regenerative food systems has never been more
-                      important. That’s why we’ve made a promise to do more for
-                      the planet, by taking less. Our plant-forward menu means
-                      that we’re already on average 30% less carbon intensive
-                      than the average American meal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section> */}
             <hr />
             <MapContainer />
-
-            
           </div>
         );
     }

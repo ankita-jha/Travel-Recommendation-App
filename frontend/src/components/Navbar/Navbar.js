@@ -27,15 +27,18 @@ class Navbar extends Component {
     return (
       //List all pages in Nav menu
       <nav className="NavbarItems">
-        <img src={Logo} alt="Loading" className="logo"/>
-        <h1 className="navbar-logo">
-          Travel Ducks
-        </h1>
+        <img src={Logo} alt="Loading" className="logo" />
+        <h1 className="navbar-logo">Travel Ducks</h1>
 
         <ul className="nav-menu active">
           <li>
             <MyNavLink to="/home" className="nav-item">
               Home
+            </MyNavLink>
+          </li>
+          <li>
+            <MyNavLink to="/search" className="nav-item">
+              Search
             </MyNavLink>
           </li>
           <li>
@@ -58,14 +61,7 @@ class Navbar extends Component {
               Add Experience
             </MyNavLink>
           </li>
-          <li>
-            <MyNavLink
-              to={user === null ? "/login" : "/view"}
-              onClick={this.getUser}
-              className="nav-item">
-              View Plan
-            </MyNavLink>
-          </li>
+
           <li>
             <MyNavLink
               to={user === null ? "/login" : "/account"}

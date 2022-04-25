@@ -3,6 +3,7 @@ import front1 from '../../img/abc.jpg';
 import front2 from '../../img/abc1.jpg';
 import front3 from '../../img/abc2.jpg';
 import './slider.scss';
+import Weather from '../../pages/Weather/Weather.js';
 
 
 class Slider extends Component{
@@ -22,11 +23,12 @@ class Slider extends Component{
                 
                 <div className="carousel-caption d-none d-md-block">
                 <div class="search">
-                  <h1>Find and explore your next travel destination</h1> 
-                 <input type="text" placeholder="search location"/>
+                  {/* <h1>Find and explore your next travel destination</h1> 
+                 <input type="text" placeholder="search location"/> */}
+                 <Weather/>
                      </div>
-                    <h4>EXPLORE. CREATE. INSPIRE.</h4>
-                    <p className='white-text'>Don’t let beautiful memories fade. Create your own travel journal in our free software for web</p>
+                    {/* <h4>EXPLORE. CREATE. INSPIRE.</h4>
+                    <p className='white-text'>Don’t let beautiful memories fade. Create your own travel journal in our free software for web</p> */}
                 </div>
                 </div>
                 { /* Second Div of the carousel*/ }
