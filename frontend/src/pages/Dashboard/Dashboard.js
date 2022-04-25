@@ -71,7 +71,7 @@ class Dashboard extends Component {
                     const { _id,path,title, rating, bookmarkstatus } = element;
                     
                     return(
-                      <TravelCard key={path} id={element.path} image={image1} title={title}  value={rating}/>
+                      <TravelCard className="Tcard" key={path} id={element.path} image={image1} title={title}  value={rating}/>
                     )
                     })}
             </div>

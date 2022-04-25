@@ -29,7 +29,7 @@ class Weather extends Component {
 
         //Weather Api call
         Axios.get(
-          `http://api.weatherstack.com/current?access_key=ee2c00a09ba65e4467143d28625d3fa2&query=${this.state.userPosition.latitude},${this.state.userPosition.longitude}`
+          `http://api.weatherstack.com/current?access_key=33f2982fbeff25075f7f3f9e41bdbd4a&query=${this.state.userPosition.latitude},${this.state.userPosition.longitude}`
         ).then((res) => {
           let userWeather = {
             temperature: res.data.current.temperature,
@@ -60,7 +60,7 @@ class Weather extends Component {
     e.preventDefault();
 
     Axios.get(
-      `http://api.weatherstack.com/current?access_key=ee2c00a09ba65e4467143d28625d3fa2&query=${this.state.regionInput}`
+      `http://api.weatherstack.com/current?access_key=33f2982fbeff25075f7f3f9e41bdbd4a&query=${this.state.regionInput}`
     ).then((res) => {
       let userWeather = {
         temperature: res.data.current.temperature,

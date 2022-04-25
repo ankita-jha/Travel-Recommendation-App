@@ -41,6 +41,7 @@ export default function BlogCard(props) {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
+      {/* the first initial of the user displayed on the card */}
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -48,7 +49,7 @@ export default function BlogCard(props) {
           </Avatar>
         }
         title={props.blogTitle}
-        // subheader="September 14, 2016"
+       
       />
       <CardMedia //Image on the card
         component="img"
@@ -56,6 +57,8 @@ export default function BlogCard(props) {
         image={props.blogImage}
         alt="Image"
       />
+      
+
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {props.blogDescription}
@@ -65,11 +68,13 @@ export default function BlogCard(props) {
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
+
+        {/* Share Button */}
         <IconButton aria-label="share" onClick={() => setButtonPopup(true)}>
           
           <ShareIcon />
         </IconButton>
-
+         
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
           <div className="socialmedia">
             <h1>
@@ -100,6 +105,8 @@ export default function BlogCard(props) {
         <div className="delete-blog p-2" onClick={() => props.deleteBlog(props.id)}>
           <i class="fa-solid fa-trash-can fa-lg"></i>
         </div>
+
+        {/* the description of the blog opens on clicking the expand  */}
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

@@ -75,7 +75,7 @@ class App extends Component {
               />
               <Route
                 exact
-                path="/account"
+                path="/account" 
                 component={() => (
                   <UserDetail
                     removeUser={this.removeUser}
