@@ -19,7 +19,7 @@ class TravelCard extends Component {
     super(props);
     this.state = {
       setValue: "",
-      bookmark: false,
+      bookmark: true,
       path: this.props.id
     };
   }
@@ -89,15 +89,18 @@ class TravelCard extends Component {
                   defaultValue={this.props.value}
                 />
               </div>
-              <div
-                className="bookmark"
-                onClick={
-                  <BookmarkIcon sx={{ fontSize: 40, color: red[500] }} />
-                }>
-                <BookmarkBorderOutlinedIcon
-                  sx={{ fontSize: 40, color: blue[500] }}
-                />
-              </div>
+              <div className='bookmark'>
+                          {
+                              this.state.bookmark ? 
+                              <div onClick={()=>this.setState({bookmark: !this.state.bookmark})}>
+                                  <BookmarkBorderOutlinedIcon sx={{ fontSize: 40, color: blue[500] }}/>
+                              </div>                             
+                              :
+                              <div onClick={()=>this.setState({bookmark: !this.state.bookmark})}>
+                                  <BookmarkIcon sx={{ fontSize: 40, color: blue[500] }}/>
+                              </div>                          
+                          }                         
+                        </div>
             </div>
             {/* Weather and Location */}
             <div>
