@@ -1,5 +1,5 @@
 import React from "react";
-
+import './location.scss';
 //location check
 export default function UserLocation(props) {
   const {

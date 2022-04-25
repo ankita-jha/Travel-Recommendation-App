@@ -4,4 +4,11 @@
   box-sizing:border-box;
   border: none;
     }
-    
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1; /* Firefox */
+    }
+
+    .regioninput{
+      color: white;
+    }

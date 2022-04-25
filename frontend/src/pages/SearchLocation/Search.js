@@ -17,7 +17,7 @@ export default function Search(props) {
           <input
             type="text"
             className="regioninput"
-            placeholder="Search a place"
+            placeholder="search location"
             onChange={(e) => {
               props.changeRegion(e.target.value);
             }}
