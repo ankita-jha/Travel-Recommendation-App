@@ -63,7 +63,9 @@ class TravelCard extends Component {
             height="200px"
             // image={this.props.image}
             // image={require(this.props.key).default}
-            src={require("../../img/images/"+ this.state.path +".jpg").default}
+            src={
+              require("../../img/images/" + this.state.path + ".jpg").default
+            }
             // src={require("../../img/images/" + this.state.path + ".jpg").default}
             alt=""
           />
@@ -82,7 +84,7 @@ class TravelCard extends Component {
                     this.props.setValue(newValue);
                   }}
                   // size="large"
-                  precision={0.5}
+                  precision={0.1}
                   readOnly
                   defaultValue={this.props.value}
                 />
