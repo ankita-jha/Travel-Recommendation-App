@@ -1,6 +1,6 @@
 import React from 'react'
 
-//location
+//location check
 export default function UserLocation(props) {
 
     const { temperature, description, location, region, country, wind_speed, pressure, precip, humidity, img } = props.weather;
