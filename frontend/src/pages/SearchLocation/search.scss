@@ -19,10 +19,13 @@
     .box{
 
       display: flex;
+      margin-left: -40px;
     }
     .btnmic{
 
       border: none;
       background-color:rgba(84, 156, 160, 0.376) ;
       color: white;
+      height:25px;
+      margin-top: 30px;      
     }
