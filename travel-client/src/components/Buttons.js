@@ -2,6 +2,7 @@ import React from 'react';
 import './Buttons.css';
 import Tooltip from '@material-ui/core/Tooltip';
 
+//Buttons used for Style search
 const Buttons = ({ controls, onClick }) => {
   return (
     <div className="Landing__form__buttons">
