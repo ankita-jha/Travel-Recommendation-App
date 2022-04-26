@@ -7,11 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './index.sass';
 
-ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
-  document.getElementById('root')
-);
+import store from './store';
 
 
+const render = () => {
+  ReactDOM.render( <BrowserRouter>
+    <App />
+</BrowserRouter>, document.getElementById('root'));
+};
+
+render();
+
+store.subscribe(render);

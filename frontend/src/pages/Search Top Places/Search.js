@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-
+import App from '../../containers/App.js'
 class Search extends Component {
   state = {};
   render() {
-    return <p>Search Places</p>;
+    return   <App />;
   }
 }
 

@@ -12,6 +12,9 @@ import ViewBlog from "./pages/View Blog/ViewBlog.js";
 import Footer from "./components/Footer/Footer.js";
 import Search from "./pages/Search Top Places/Search.js";
 import ForgotPassword from "./pages/ForgotPassword/index.js";
+import Header from './components/Header';
+import Landing from '../src/containers/Landing';
+import MainContent from '../src/containers/MainContent';
 class App extends Component {
   /** redirect user to his/her combo list after login successfully
    *
@@ -55,6 +58,7 @@ class App extends Component {
                     </Switch>   */}
 
           <Route exact path="/home" component={Home} />
+          <Route exact path="/Search" component={Search} />
 
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/viewblog" component={ViewBlog} />
@@ -65,6 +69,12 @@ class App extends Component {
             path="/login"
             component={() => <Login getUser={this.getUser} />}
           />
+
+{/* <div className="Maps">
+          <Route exact path ="/landing" component={Landing} />
+          <Header />
+          <MainContent />
+        </div> */}
           <Route
             exact
             path="/forgot"

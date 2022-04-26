@@ -39,7 +39,7 @@ class Navbar extends Component {
             </MyNavLink>
           </li>
           <li>
-            <MyNavLink to="/search" className="nav-item">
+            <MyNavLink to="/Search" className="nav-item">
               Search
             </MyNavLink>
           </li>
