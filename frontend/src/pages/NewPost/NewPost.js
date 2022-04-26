@@ -33,6 +33,7 @@ export default function NewPost() {
     try {
       axios.post("/api/posts", newPost);
       //window.location.replace("/newPost");
+      alert("Blog Posted");
     } catch (err) {}
   };
 

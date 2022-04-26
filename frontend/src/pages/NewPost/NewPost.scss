@@ -1,5 +1,5 @@
 .newPost {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .newPostHeading {
@@ -7,15 +7,16 @@
     font-size: 30px;
     color: teal;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 27px;
 }
 
 .newPostImage {
     margin-left: 150px;
     width: 80vw;
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 20px;
+    
 }
 
 .newPostForm {
@@ -65,7 +66,7 @@
 
 .newPostText {
     font-size: 20px;
-    height: 30vh;
+    height: 20vh;
 }
 
 .newPostSubmit {
