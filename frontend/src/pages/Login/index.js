@@ -28,13 +28,18 @@ class Login extends Component {
     this.setState({ submitted: true });
     const { email, password } = this;
     const { data } = await getUser(email.value);
+    console.log("data===", data[0]._id);
     if (data.length === 0 || data[0].Password !== password.value)
       //if user doesn't exist or password doesn't match
       return;
     this.setState({ find: true });
     localStorage.setItem("user", email.value);
     localStorage.setItem("password", password.value);
+    localStorage.setItem("userId", data[0]._id);
+
     this.props.getUser();
+    console.log(this.props.getUser(), "hiheheeirieureiru");
+    console.log(localStorage.getItem("userId"));
   };
 
   render() {

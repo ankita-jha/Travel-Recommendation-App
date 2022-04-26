@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import MyNavLink from '../../pages/MyNavLink';
+import React, { Component } from "react";
+import MyNavLink from "../../pages/MyNavLink";
 import "./Navbar.scss";
 import Logo from "../../img/images/Logo.gif";
 
@@ -12,7 +12,7 @@ class Navbar extends Component {
    */
   getUser = () => {
     this.setState({ user: localStorage.getItem("user") });
-    // console.log("Navbar",this.state.user);
+    console.log("Navbar", this.state.user);
   };
 
   /** initialize state
@@ -57,24 +57,35 @@ class Navbar extends Component {
             <MyNavLink
               to={user === null ? "/login" : "/newPost"}
               onClick={this.getUser}
-              className="nav-item">
+              className="nav-item"
+            >
               Add Experience
             </MyNavLink>
           </li>
 
           <li>
-            <MyNavLink
-              to={user === null ? "/login" : "/account"}
-              onClick={this.getUser}
-              className="nav-item">
-              My Account
-            </MyNavLink>
+            {user === null ? (
+              <MyNavLink
+                to={user === null ? "/login" : "/account"}
+                onClick={this.getUser}
+                className="nav-item"
+              >
+                My Account
+              </MyNavLink>
+            ) : (
+              <MyNavLink
+                to={user === null ? "/login" : "/account"}
+                onClick={this.getUser}
+                className="nav-item"
+              >
+                {user.toUpperCase()}
+              </MyNavLink>
+            )}
           </li>
         </ul>
       </nav>
     );
   }
 }
-
 
 export default Navbar;

@@ -3,6 +3,7 @@ import { getCombo } from "../../services/palnServices";
 import ComboPreview from "../../components/ComboPreview";
 import "./layout.scss";
 import { Button } from "react-bootstrap";
+import MyBlog from "../MyBlog/MyBlog";
 
 class UserDetail extends Component {
   //set state of ViewPlan
@@ -38,7 +39,7 @@ class UserDetail extends Component {
     const { comboList } = this.state;
     return (
       <div>
-        <ul className="card-list">
+        {/* <ul className="card-list">
           {comboList.map((combo) => {
             return (
               <ComboPreview
@@ -48,7 +49,8 @@ class UserDetail extends Component {
               />
             );
           })}
-        </ul>
+        </ul> */}
+        <MyBlog />
         <div className="but1">
           <p></p>
           <Button onClick={this.logOut} bsStyle="primary">

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import BlogCard from "../../components/Card/BlogCard";
 import axios from "axios";
-import { ThemeProvider } from "styled-components";
-import Login from "../Login";
 
 class ViewBlog extends Component {
   constructor(props) {
@@ -59,7 +57,7 @@ class ViewBlog extends Component {
                   const { _id, title, desc, photo, username, createdAt } =
                     element;
 
-                  return (
+                  return username === localStorage.getItem("user") ? (
                     <BlogCard
                       key={photo}
                       Avatar={username.charAt(0).toUpperCase()}
@@ -72,7 +70,7 @@ class ViewBlog extends Component {
                       username={username}
                       handleUpdate={() => this.handleUpdate(_id)}
                     />
-                  );
+                  ) : null;
                 })}
             </div>
           </div>

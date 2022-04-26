@@ -125,25 +125,32 @@ export default function BlogCard(props) {
             close
           </button>
         </Popup>
-        <div
-          className="delete-blog p-2"
-          onClick={() => props.deleteBlog(props.id)}
-        >
-          <i class="fa-solid fa-trash-can fa-lg"></i>
-        </div>
-        <div className="update-blog p-2">
-          {updateMode ? (
-            <i
-              className="singlePostIcon far fa-edit fa-lg"
-              onClick={() => setUpdateMode(false)}
-            ></i>
-          ) : (
-            <i
-              className="singlePostIcon far fa-edit fa-lg"
-              onClick={() => setUpdateMode(true)}
-            ></i>
-          )}
-        </div>
+
+        {props.username === localStorage.getItem("user") ? (
+          <div
+            className="delete-blog p-2"
+            onClick={() => props.deleteBlog(props.id)}
+          >
+            <i class="fa-solid fa-trash-can fa-lg"></i>
+          </div>
+        ) : null}
+
+        {props.username !== localStorage.getItem("user") ? null : (
+          <div className="update-blog p-2">
+            {updateMode ? (
+              <i
+                class="singlePostIcon fa-solid fa-ban fa-lg"
+                onClick={() => setUpdateMode(false)}
+              ></i>
+            ) : (
+              <i
+                className="singlePostIcon far fa-edit fa-lg"
+                onClick={() => setUpdateMode(true)}
+              ></i>
+            )}
+          </div>
+        )}
+
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

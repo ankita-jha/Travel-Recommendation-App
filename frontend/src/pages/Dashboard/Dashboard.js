@@ -23,6 +23,7 @@ class Dashboard extends Component {
       .then((data) => this.setState({ data }));
   };
 
+
   render() {
     return (
       <div className="container valign-wrapper">
