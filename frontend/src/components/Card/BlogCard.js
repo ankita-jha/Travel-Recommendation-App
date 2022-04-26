@@ -83,6 +83,8 @@ export default function BlogCard(props) {
         image={props.blogImage}
         alt="Image"
       />
+      
+
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           <b> Created At </b> : {new Date(props.blogDescription).toDateString()}{" "}
@@ -97,7 +99,7 @@ export default function BlogCard(props) {
         <IconButton aria-label="share" onClick={() => setButtonPopup(true)}>
           <ShareIcon />
         </IconButton>
-
+         
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
           <div className="socialmedia">
             <h1>

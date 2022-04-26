@@ -1,14 +1,28 @@
 
 
+
   .search{
-  box-sizing:border-box;
   border: none;
-    }
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: white;
-      opacity: 1; /* Firefox */
     }
 
     .regioninput{
+      border: none;
+      background-color: rgba(84, 156, 160, 0.376) ;
+      color: white;
+      
+    }
+    .regioninput::placeholder{
+
+      color: white;
+    }
+
+    .box{
+
+      display: flex;
+    }
+    .btnmic{
+
+      border: none;
+      background-color:rgba(84, 156, 160, 0.376) ;
       color: white;
     }
