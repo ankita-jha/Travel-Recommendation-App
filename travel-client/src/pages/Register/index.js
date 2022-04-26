@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { addNewUser, getUser } from "../../services/userService";
-import MyNavLink from "../../pages/MyNavLink";
+import MyNavLink from "../MyNavLink";
 import "./register.scss";
 import Background from "../../components/Background/Background";
 import MapContainer from "../../components/MapContainer/MapContainer";

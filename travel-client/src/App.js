@@ -13,8 +13,8 @@ import Footer from "./components/Footer/Footer.js";
 import Search from "./pages/Search Top Places/Search.js";
 import ForgotPassword from "./pages/ForgotPassword/index.js";
 import Header from './components/Header';
-import Landing from '../src/containers/Landing';
-import MainContent from '../src/containers/MainContent';
+import Landing from './containers/Landing';
+import MainContent from './containers/MainContent';
 class App extends Component {
   /** redirect user to his/her combo list after login successfully
    *
