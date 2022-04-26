@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import { Route, Redirect, Link, withRouter, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.js";
 import Home from "./pages/Home";
-import NewPlan from "./pages/NewPlan";
-import ViewPlan from "./pages/ViewPlan";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import UserDetail from "./pages/UserDetail";
 import "./App.css";
-import AboutUs from "./pages/AboutUs/AboutUs";
 import NewPost from "./pages/NewPost/NewPost.js";
 import Dashboard from "./pages/Dashboard/Dashboard.js";
 import ViewBlog from "./pages/View Blog/ViewBlog.js";
@@ -58,10 +55,10 @@ class App extends Component {
                     </Switch>   */}
 
           <Route exact path="/home" component={Home} />
-          <Route exact path="/create" component={NewPlan} />
+
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/viewblog" component={ViewBlog} />
-          <Route exact path="/view" component={ViewPlan} />
+
           {/* <Route exact path="/forgot" component={ForgotPassword} /> */}
           <Route
             exact

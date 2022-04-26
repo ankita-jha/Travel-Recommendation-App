@@ -58,7 +58,7 @@ class Weather extends Component {
   //update the weather depending upon the value user entered
   changeLocation = (e) => {
     e.preventDefault();
-
+    console.log("regionInput=", this.state.regionInput);
     Axios.get(
       `http://api.weatherstack.com/current?access_key=33f2982fbeff25075f7f3f9e41bdbd4a&query=${this.state.regionInput}`
     ).then((res) => {

@@ -55,7 +55,8 @@ function Search(props) {
             className="region"
             onSubmit={(e) => {
               props.changeLocation(e);
-            }}>
+            }}
+          >
             <input
               type="text"
               value={note}
@@ -64,11 +65,16 @@ function Search(props) {
               onChange={(e) => {
                 props.changeRegion(e.target.value);
               }}
+              // onClick={() => setIsListening((prevState) => !prevState)}
+              onBlur={(e) => {
+                props.changeRegion(e.target.value);
+              }}
             />
           </form>
           <button
             onClick={() => setIsListening((prevState) => !prevState)}
-            className="btnmic">
+            className="btnmic"
+          >
             {isListening ? (
               <span>
                 <i class="fa-solid fa-microphone-lines-slash"></i>

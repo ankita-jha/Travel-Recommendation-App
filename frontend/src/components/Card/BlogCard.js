@@ -73,7 +73,6 @@ export default function BlogCard(props) {
             </Avatar>
           }
           title={props.blogTitle}
-          // subheader="September 14, 2016"
         />
       )}
 
@@ -83,7 +82,6 @@ export default function BlogCard(props) {
         image={props.blogImage}
         alt="Image"
       />
-      
 
       <CardContent>
         <Typography variant="body2" color="text.secondary">
@@ -93,13 +91,10 @@ export default function BlogCard(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        {/* <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton> */}
         <IconButton aria-label="share" onClick={() => setButtonPopup(true)}>
           <ShareIcon />
         </IconButton>
-         
+
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
           <div className="socialmedia">
             <h1>
