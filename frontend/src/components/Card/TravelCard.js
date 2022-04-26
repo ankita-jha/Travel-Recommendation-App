@@ -46,9 +46,7 @@ class TravelCard extends Component {
   }
 
   render() {
-    // bookmarktoggle (bookmarked){
-
-    // }
+   
 
     return (
       <div className="new-card">
@@ -57,12 +55,10 @@ class TravelCard extends Component {
           <CardMedia //Image on the card
             component="img"
             height="200px"
-            // image={this.props.image}
-            // image={require(this.props.key).default}
+          
             src={
               require("../../img/images/" + this.state.path + ".jpg").default
             }
-            // src={require("../../img/images/" + this.state.path + ".jpg").default}
             alt=""
           />
 
@@ -107,17 +103,7 @@ class TravelCard extends Component {
                 )}
               </div>
             </div>
-            {/* Weather and Location */}
-            <div>
-              {/* <WeatherContainer>
-                    <Condition>
-                    <span>{`${Math.floor(weather?.main?.temp - 273)}°C`}</span>
-                    {`  |  ${weather?.weather[0].description}`}
-                    </Condition>
-                    <WeatherIcon src={WeatherIcons[weather?.weather[0].icon]}/>
-            </WeatherContainer> */}
-            </div>
-            {/* Bookmar */}
+
           </CardContent>
         </Card>
       </div>

@@ -31,6 +31,7 @@ class Dashboard extends Component {
           <div style={{ marginTop: "20px" }} className="Cards"></div>
           <div>
             <p></p>
+
             <div className="travelcards">
               {this.state.data &&
                 this.state.data.map((element, id) => {

@@ -11,6 +11,7 @@ import {
   FormGroup,
   Row,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class Register extends Component {
   //set state of Register
@@ -119,6 +120,11 @@ class Register extends Component {
               <Button type="submit" bsStyle="primary">
                 Register
               </Button>
+
+              <p></p>
+              <span>
+                <Link to="/login">Login</Link>
+              </span>
             </form>
           </Row>
         </div>

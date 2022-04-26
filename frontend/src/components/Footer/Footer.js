@@ -10,10 +10,10 @@ class Footer extends Component {
           <div className="row">
             <div className="col-md-4">
               {/*First Column*/}
-              <h6>PLACE HOPPERS</h6>
+              <h6>TRAVEL DUCKS</h6>
               <p className="text">
                 Penguin Press <br />
-                Place Hoppers Apps
+                Travel Ducks
                 <br />
               </p>
             </div>
@@ -49,7 +49,7 @@ class Footer extends Component {
               </div>
             </div>
             <hr />
-            <p>© 2022 PLACE HOPPERS. All rights reserved.</p>
+            <p>© 2022 Travel Ducks. All rights reserved.</p>
           </div>
         </div>
       </section>

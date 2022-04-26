@@ -27,8 +27,10 @@ class Navbar extends Component {
     return (
       //List all pages in Nav menu
       <nav className="NavbarItems">
-        <img src={Logo} alt="Loading" className="logo" />
-        <h1 className="navbar-logo">Travel Ducks</h1>
+        <MyNavLink to="/home" className="nav-item1">
+          <img src={Logo} alt="Loading" className="logo" />
+          <h1 className="navbar-logo">Travel Ducks</h1>
+        </MyNavLink>
 
         <ul className="nav-menu active">
           <li>
